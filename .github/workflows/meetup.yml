@@ -23,6 +23,6 @@ jobs:
       run: |
         meetup_orbit --check-rsvps
       env:
-        MEETUP_URLNAME: ${{ secrets.MEETUP_URLNAME }}
+        MEETUP_URLNAME: ${{ vars.MEETUP_URLNAME }}
         ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
-        ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
+        ORBIT_WORKSPACE_ID: ${{ vars.ORBIT_WORKSPACE_ID }}
